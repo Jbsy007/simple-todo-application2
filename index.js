@@ -43,6 +43,6 @@ function onTaskTitleClicked(task) {
 
     // true⇔falseを切り替える
     task.isDone = !task.isDone;
-
+    /*/
     return task;
 }
