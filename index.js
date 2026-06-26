@@ -14,16 +14,17 @@ let tasks = [
  * 注) 登録ボタンを押したときに、この関数が呼ばれる処理は既に書かれています。
  * 
  */
+
 function addTask(title) {
-    const task = { isDone: false }
+    const task = { 
+        title: title,   
+        isDone: false
+    };
 
-    // やることのタイトルを設定(このままだと、すべてのタイトルがHello Worldになってしまう！)
-    task.title = "Hello World"
-
-    // 以降は無視して良い
     tasks.push(task);
     drawTask(task, tasks.length - 1);
 }
+
 
 /**
  * [学生2]
@@ -40,7 +41,7 @@ function addTask(title) {
  * false    |   true
  */
 function onUpdateIsDone(task) {
-    
+
     console.log("チェックボックスがクリックされました。", task);
 
     // 達成状態を更新(このままだと、現在の達成状態で更新されてしまう！)
