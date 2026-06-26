@@ -25,15 +25,15 @@ function addTask(title) {
  * [学生2]
  * チェックボックスをクリックしたとき
  */
+
+
 function onUpdateIsDone(task) {
     console.log("チェックボックスがクリックされました。", task);
-
-    // true⇔falseを切り替える
-    const currentValue=task.isDone;
     task.isDone = !task.isDone;
-
     return task;
 }
+
+
 
 /**
  * [学生3]
